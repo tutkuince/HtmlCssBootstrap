@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <form action="">
+        Name
+        <input type="text" name="name" placeholder="Write your name">
+        <br> Surname
+        <input type="text" name="surname" placeholder="Write your surname">
+        <input type="submit" value="Submit">
+        <!-- <button>Submit</button> -->
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Personal Info</legend>
+            Name
+            <br>
+            <input type="text" name="name">
+            <br> Surname
+            <br>
+            <input type="text" name="surname">
+            <br>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Please write your message"></textarea>
+            <br>
+            <select name="brands">
+                <option value="AUDI">AUDI</option>
+                <option value="BMW">BMW</option>
+                <option value="Merceds-Benz">Mercedes-Benz</option>
+            </select>
+            <br>
+            <input list="countries" name="countries">
+            <datalist id="countries">
+                <option value="Turkey">Turkey</option>
+                <option value="England">England</option>
+                <option value="Germany">Germany</option>
+            </datalist>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>

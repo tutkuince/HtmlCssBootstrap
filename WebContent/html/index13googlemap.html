@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <h1>Google Map</h1>
+    <div id="map" style="width: 800px; height: 400px"></div>
+
+    <script>
+        function myMap(){
+            var mapOptions = {
+                center: new google.maps.LatLng(38.4, 27.1),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApiI8E7BD5WNXRTODYQLjNaavtItu9xQE&callback=myMap"
+        type="text/javascript"></script>
+</body>
+
+</html>
